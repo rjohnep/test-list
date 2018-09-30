@@ -12,7 +12,7 @@ module.exports = (options) => ({
   entry: options.entry,
   output: Object.assign(
     {
-      path: path.resolve(process.cwd(), 'dist'),
+      path: path.resolve(process.cwd(), 'docs'),
       publicPath: '/',
     },
     options.output,
