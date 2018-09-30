@@ -6,13 +6,16 @@
     "npm": ">=5",
     "node": ">=8"
   },
+  "homepage": "https://rjohnep.github.io/test-list",
   "author": "@ER",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist",
     "postinstall": "yarn build:dll",
     "prebuild": "yarn build:clean",
     "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:dll": "node ./internals/scripts/dependencies.js",
-    "build:clean": "rimraf ./docs",
+    "build:clean": "rimraf ./dist",
     "start": "cross-env NODE_ENV=development node server",
     "start:production": "yarn build && yarn start:prod",
     "start:prod": "cross-env NODE_ENV=production node server",
@@ -37,6 +40,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "gh-pages": "^2.0.0",
     "history": "^4.7.2",
     "hoist-non-react-statics": "^3.0.1",
     "immutable": "^3.8.2",
