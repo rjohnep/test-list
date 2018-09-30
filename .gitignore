@@ -1,0 +1,13 @@
+.DS_Store
+node_modules
+dist
+.tmp
+.idea
+.vscode
+.history
+*.log
+*.orig
+*~
+package-lock.json
+coverage
+.eslintcache
