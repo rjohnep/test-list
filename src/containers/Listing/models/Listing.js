@@ -28,7 +28,23 @@ export default class ListingModel extends new Record({
     return this.loading;
   }
 
-  filterBy(filter) {
-    return this.entities.filter((item) => item.category === filter);
+  filterBy(filters) {
+    return this.entities.filter(
+      (item) => {
+        const isCategoriesFiltering = filters.get('category').size > 0;
+        const isFoundInCategories = isCategoriesFiltering && filters.get('category').has(item.category);
+
+        const isColorsFiltering = filters.get('colors').size > 0;
+        const isFoundInColors = isColorsFiltering && item.variants.some(
+          (variant) => filters.get('colors').has(variant.color)
+        );
+
+        if (isCategoriesFiltering && isColorsFiltering) {
+          return isFoundInCategories && isFoundInColors;
+        }
+
+        return isFoundInCategories || isFoundInColors;
+      }
+    );
   }
 }

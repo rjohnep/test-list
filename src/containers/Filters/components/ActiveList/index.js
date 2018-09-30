@@ -18,7 +18,7 @@ export default class ActiveListComponent extends PureComponent {
 
     return filters.entrySeq().map(
       ([k, set]) => set.size > 0 && (
-        <Line>
+        <Line key={k}>
           <Title>{k}:</Title>
           {
             set.map(

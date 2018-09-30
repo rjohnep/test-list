@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { makeSelectActiveFilters } from 'containers/Filters/selectors';
+import { makeSelectHasActiveFilters, makeSelectActiveFilters } from 'containers/Filters/selectors';
 
 import { initialState } from './reducer';
 
@@ -8,9 +8,9 @@ const selectListingState = (state) => state.get('listing', initialState);
 
 const makeSelectProducts = createSelector(
   selectListingState,
+  makeSelectHasActiveFilters,
   makeSelectActiveFilters,
-  // (listing, filter) => filter.size && listing.filterBy(filter) || listing.entities,
-  (listing, filters) => listing.entities,
+  (listing, isFiltersActive, filters) => isFiltersActive && listing.filterBy(filters) || listing.entities,
 );
 
 const makeSelectIsLoading = createSelector(

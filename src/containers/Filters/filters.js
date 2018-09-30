@@ -1,7 +1,7 @@
 export default [
   {
     key: 'category',
-    options: ['bags', 'kits'],
+    options: ['bags', 'luggage', 'kits'],
   },
   {
     key: 'colors',
