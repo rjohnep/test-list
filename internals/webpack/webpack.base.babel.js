@@ -13,7 +13,7 @@ module.exports = (options) => ({
   output: Object.assign(
     {
       path: path.resolve(process.cwd(), 'dist'),
-      publicPath: '/test-list',
+      publicPath: '/test-list/',
     },
     options.output,
   ),
