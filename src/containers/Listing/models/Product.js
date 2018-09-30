@@ -10,6 +10,7 @@ const VariantRecord = new Record({
 export default class ProductModel extends new Record({
   id: undefined,
   title: null,
+  description: null,
   variants: new Map(),
   category: null,
 }) {
@@ -41,6 +42,6 @@ export default class ProductModel extends new Record({
   }
 
   get colors() {
-    return this.variants.keys();
+    return this.variants.keySeq();
   }
 }

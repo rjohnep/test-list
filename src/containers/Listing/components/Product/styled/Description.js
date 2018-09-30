@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.h3`
-  margin: 20px 0 10px;
-  font-size: 20px;
+export default styled.p`
+  margin: 0 0 20px;
   text-align: center;  
 `;

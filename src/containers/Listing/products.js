@@ -54,7 +54,7 @@ export default [
   },
   {
     title: 'Weekender',
-    description: 'Office, gym, getaway--you name it',
+    description: 'Office, gym, getaway',
     category: 'luggage',
     variants: [
       {
