@@ -9,4 +9,9 @@ export default styled.div`
   border-radius: 3px;
   border: 1px solid rgba(0,0,0,0.11);
   background: #fff;
+  
+  @media (max-width: 640px) {
+    width: calc(100% - 20px);
+    left: 10px;
+  }
 `;

@@ -6,4 +6,8 @@ export default styled.div`
   align-items: center;
   
   margin: 0 0 20px;
+  
+   @media (max-width: 640px) {
+    justify-content: space-between;
+  }
 `;

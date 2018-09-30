@@ -1,6 +1,7 @@
 export default {
   colors: {
     primary: {
+      lightest: '#F9FBFC',
       lighter: '#EBF8FB',
       light: '#D7F1F7',
       main: '#1D95AD',

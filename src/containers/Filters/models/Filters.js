@@ -81,4 +81,8 @@ export default class FiltersModel extends new Record({
     return this.active.size > 0
       && this.active.valueSeq().some((set) => set.size > 0);
   }
+
+  get activeColors() {
+    return this.active.get('colors');
+  }
 }

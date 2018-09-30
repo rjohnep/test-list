@@ -16,4 +16,8 @@ export default styled.div`
     transform: scale(1.15) translateY(-10px) translateZ(0);
     transition: transform 1s;
   }
+  
+  @media (max-width: 640px) {
+    background-size: auto 160px;
+  }
 `;

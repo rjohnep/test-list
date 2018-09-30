@@ -6,5 +6,9 @@ export default styled.div`
 
   padding: 20px;
   width: 100%;
-  background: rgba(250, 0, 0, .1);
+  background: ${({ theme }) => theme.colors.primary.lightest};
+  
+  @media (max-width: 980px) {
+    padding: 20px 10px;
+  }
 `;

@@ -19,8 +19,14 @@ const makeSelectActiveFilters = createSelector(
   (filters) => filters.active,
 );
 
+const makeSelectActiveColorsFilter = createSelector(
+  selectFiltersState,
+  (filters) => filters.activeColors,
+);
+
 export {
   makeSelectFilters,
   makeSelectHasActiveFilters,
   makeSelectActiveFilters,
+  makeSelectActiveColorsFilter,
 };
