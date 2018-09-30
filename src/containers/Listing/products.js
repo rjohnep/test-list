@@ -1,12 +1,16 @@
-import Img1 from './assets/1.png';
-import Img2 from './assets/2.png';
-import Img3 from './assets/3.png';
-import Img4 from './assets/4.png';
-import Img5 from './assets/5.png';
-import Img6 from './assets/6.png';
-import Img7 from './assets/7.png';
-import Img8 from './assets/8.png';
-import Img9 from './assets/9.png';
+import Img1Black from './assets/1-1.png';
+import Img1Red from './assets/1-2.png';
+import Img1Blue from './assets/1-3.png';
+import Img2Black from './assets/2-1.png';
+import Img2Yellow from './assets/2-2.png';
+import Img3Green from './assets/3-1.png';
+import Img3Yellow from './assets/3-2.png';
+import Img4Green from './assets/4-1.png';
+import Img4Yellow from './assets/4-2.png';
+import Img4Red from './assets/4-3.png';
+import Img4Blue from './assets/4-4.png';
+import Img5Red from './assets/5-1.png';
+import Img6Yellow from './assets/6-1.png';
 
 export default [
   {
@@ -16,18 +20,18 @@ export default [
     variants: [
       {
         color: 'black',
-        price: '150$',
-        image: Img1,
+        price: '$150',
+        image: Img1Black,
       },
       {
         color: 'red',
-        price: '130$',
-        image: Img1,
+        price: '$130',
+        image: Img1Red,
       },
       {
         color: 'blue',
-        price: '140$',
-        image: Img1,
+        price: '$140',
+        image: Img1Blue,
       },
     ],
   },
@@ -38,13 +42,13 @@ export default [
     variants: [
       {
         color: 'black',
-        price: '250$',
-        image: Img2,
+        price: '$250',
+        image: Img2Black,
       },
       {
         color: 'yellow',
-        price: '240$',
-        image: Img2,
+        price: '$240',
+        image: Img2Yellow,
       },
     ],
   },
@@ -55,74 +59,64 @@ export default [
     variants: [
       {
         color: 'green',
-        price: '350$',
-        image: Img3,
+        price: '$350',
+        image: Img3Green,
       },
       {
         color: 'yellow',
-        price: '340$',
-        image: Img3,
+        price: '$340',
+        image: Img3Yellow,
       },
     ],
   },
   {
-    title: 'The Ultralight Canvas Main Line',
-    description: 'Grab and go',
+    title: 'Packing Cube Trio',
+    description: 'Cult favorite space saver',
     category: 'luggage',
     variants: [
       {
         color: 'green',
-        price: '135$',
-        image: Img4,
+        price: '$135',
+        image: Img4Green,
       },
       {
         color: 'yellow',
-        price: '140$',
-        image: Img4,
+        price: '$140',
+        image: Img4Yellow,
       },
       {
         color: 'red',
-        price: '140$',
-        image: Img4,
+        price: '$140',
+        image: Img4Red,
       },
       {
         color: 'blue',
-        price: '149$',
-        image: Img4,
+        price: '$149',
+        image: Img4Blue,
       },
     ],
   },
   {
-    title: 'Stowaway',
-    description: 'Grab and go',
+    title: 'Better Together Kit',
+    description: 'Let\'s Fly Away',
     category: 'kits',
     variants: [
       {
         color: 'red',
-        price: '840$',
-        image: Img5,
-      },
-      {
-        color: 'blue',
-        price: '749$',
-        image: Img5,
+        price: '$485',
+        image: Img5Red,
       },
     ],
   },
   {
-    title: 'Sling Sack',
-    description: 'Grab and go',
+    title: 'Bright and Early Kit',
+    description: 'Stand out on the go',
     category: 'kits',
     variants: [
       {
-        color: 'green',
-        price: '540$',
-        image: Img8,
-      },
-      {
-        color: 'black',
-        price: '449$',
-        image: Img8,
+        color: 'yellow',
+        price: '$235',
+        image: Img6Yellow,
       },
     ],
   },
